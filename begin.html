@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Play Game </title>
+        
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        
+        <!--<script type="text/javascript" src="../Vocabulary_Builder_Game/gameScript.js"></script> -->
+       <link rel="stylesheet" href="style.css"/>
+    
+    </head>
+    
+    <body>
+        
+        <!--Game header -->
+        <div class='header'>
+            <h3> Build Your Vocab </h3>
+        </div>
+        
+        <div class="wrapper">
+            <div class='gameInfo'>
+                
+                <div id="score"> 
+                    <h4> YOUR SCORE </h4>
+                    <!-- Show points here -->
+                    <p id="score"> </p> 
+                </div>
+                
+                <div id="reset"> 
+                    <button type="reset"> RESET QUIZ </button>
+                </div>
+                
+                <div id="start">
+                    <button type="button"> START QUIZ </button>
+                </div>
+                
+                    <h4> GAME TIME </h4>
+                    <div id='gameClock'>
+                        <div>
+                            <span class="time"> </span>
+                            <div class="smalltext"> Time Remaining </div>
+                        </div>
+                    </div>
+            
+            </div>
+            
+            <div class="quiz_Container">
+                <div> 
+                    <p id="instruction"> Select an option which best describes the word below. Press <span style="text-decoration: underline"> START QUIZ </span> to begin. </p> 
+                
+                    <!-- Horizontal line for separation --> 
+                    <hr/>
+                </div>
+                
+                <div id="wordName"> 
+                    <!-- Header tag from JS file to display the word -->
+                   
+                </div>
+                <div id="sentence">            
+                    <!-- Paragraph tag from JS file to display sentence-->
+                </div>
+                
+                            
+                <div id="choices">
+                    <div class='choice' id='A' onclick="checkAnswer('A')"> </div>
+                    
+                    <div class='choice' id='B' onclick="checkAnswer('B')"> </div>
+                    
+                    <div class='choice' id='C' onclick="checkAnswer('C')"> </div>
+                    
+                    <div class='choice' id='D' onclick="checkAnswer('D')"> </div>
+                </div>
+                                
+            </div>
+            
+        </div>
+        
+        <script src="gameScript.js"> </script> 
+        
+    </body>
+    
+</html>

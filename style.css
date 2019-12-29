@@ -1,0 +1,267 @@
+body {
+    font-size: 20px;
+    background: url("https://66.media.tumblr.com/3ada40dd6c90799628435be2ca463e32/tumblr_owzhyy71gX1uzwgsuo1_400.gifv");
+    background-size: cover;
+}
+
+
+h4 {
+    color: #EDF060;
+    font-family: sans-serif;
+}
+
+
+/*Game Login Style */
+.gameLogin {
+    position: absolute;
+    display: inline;
+    text-align: center;
+    /*background-color: #65DB0A;
+    border: solid 2px yellow;*/
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-bottom: 30%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/*
+fieldset {
+    border: 10px solid #0ABFDB;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+/*
+.gameLogin label {
+    color: green;
+    font-family: fantasy;
+    font-size: 30px;
+    text-decoration: underline;
+}
+*/
+
+input[type=text] {
+    background-color: white;
+    color: deeppink;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 40px;
+    border: 8px solid #87F1FF;
+    cursor: pointer;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    border: 2px solid #65BF7A;
+    border-radius: 10px;
+    text-align: center;
+    color: #0ABFDB;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #EDF060;
+    box-shadow: 0px 4px 4px 4px #30EA1C;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+*/
+
+/* Game Clock Style */
+#gameClock {
+    font-family: sans-serif;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#gameClock div {
+    padding: 8px;
+    border-radius: 3px;
+    background-color: #87F1FF;
+    display: inline-block;
+}
+
+#gameClock div span {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: beige;
+    display: inline-block;
+    font-weight: bold;;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 1em;
+    position: absolute;
+    text-align: center;
+    top: 438px;
+    left: 16.5%;
+    margin-top: 0 auto;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+/* Game Style */
+.header {
+    width: 80%;
+    margin: 30px auto 0px;
+    background-color: #87F1FF;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.header h3 {
+    color: #C287E8;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid grey;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Game Options Style */
+.gameInfo {
+    width: 30%;
+    background-color: #C287E8;
+    padding-top: 2px;
+    text-align: center;
+    float: left;
+    height: 420px;
+}
+
+#score p{
+    background-color: #87F1FF;
+    position: absolute;
+    display: block;
+    padding: 10px;
+    left: 250px;
+    top: 150px;
+    width: 100px;
+}
+
+#reset button {
+    background-color: palegreen;
+    color: #000000;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px;
+    border: none;
+}
+
+#reset button:hover {
+    border: 2px dashed #3579E8;
+    color: #3579E8;
+}
+
+#start button {
+    background-color: #FCACDF;
+    color: #000000;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 20px;
+    border: none;
+}
+
+#start button:hover {
+    border: 2px solid #D35800;
+    color: #D35800;
+}
+
+ 
+.gameInfo:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Word and options style */ 
+#instruction {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    color: #000000;
+    font-weight: bold;
+    font-variant-caps: petite-caps;
+}
+
+#wordName {
+    margin-top: 0px;
+    margin-left: 325px;
+    position: relative;
+    text-align: center;
+    background-color: #FCACD7;
+}
+
+#sentence {
+    margin-top: 0px;
+    margin-left: 325px;
+    position: relative;
+    background-color: #87F1FF;
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
+
+
+#choices {
+    margin-left: 325px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 30px;
+    padding-bottom: 4px;
+    font-size: 28px;
+    padding: 40px;
+    background-color: peachpuff;
+    
+}
+
+.choice {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    border: 2px dashed palegreen;
+}
+
+.choice:hover {
+    background-color: yellow;
+    border: 2px solid #87F1FF;
+}
+
