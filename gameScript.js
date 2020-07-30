@@ -50,7 +50,7 @@ var start = document.getElementById("start");
 var reset = document.getElementById("reset");
 var instruction = document.getElementById("instruction");
 var quiz_Container = document.getElementById("quiz_Container");
-var score = document.getElementById("score");
+var score = document.getElementById("MyScore");
 var wordName = document.getElementById("wordName");
 var sentence = document.getElementById("sentence");
 var choiceA = document.getElementById("A");
@@ -217,7 +217,8 @@ reset.addEventListener("click", resetQuiz);
 
 //Display Score
 function showScore() {
-    score.innerHTML += "<p> You made "+ score + " PTS!</p>";
+     
+    MyScore.innerHTML = score;
     //or 
     alert("You made: " + score + " points!");
 }
@@ -226,7 +227,9 @@ function showScore() {
 function checkAnswer(answer) {
     if (answer == wordMeaning[currentQuestion].correct) {
         //correct
-        score+=1;
+        score += 1;
+         
+        MyScore.innerHTML = score;
         
         //Alert user
         alert("Awesome Choice! Correct ^_^ ");

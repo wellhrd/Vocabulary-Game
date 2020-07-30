@@ -2,12 +2,16 @@ body {
     font-size: 20px;
     background: url("https://66.media.tumblr.com/3ada40dd6c90799628435be2ca463e32/tumblr_owzhyy71gX1uzwgsuo1_400.gifv");
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 h4 {
     color: #EDF060;
     font-family: sans-serif;
+    position: relative;
+    bottom: 10px;
 }
 
 
@@ -148,11 +152,12 @@ input[type=submit]:hover {
 #score p{
     background-color: #87F1FF;
     position: absolute;
-    display: block;
-    padding: 10px;
-    left: 250px;
+    display: inline-block;
+    padding: 4px;
     top: 150px;
-    width: 100px;
+    margin-left: -26px;
+    width: 50px;
+    align-self: center; 
 }
 
 #reset button {
@@ -263,5 +268,17 @@ h3 {
 .choice:hover {
     background-color: yellow;
     border: 2px solid #87F1FF;
+}
+
+
+/* Responsive Styles*/
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
 }
 
