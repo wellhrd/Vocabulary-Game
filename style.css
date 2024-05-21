@@ -294,3 +294,49 @@ h3 {
         font-size: 1.2em;
     }
 }
+
+/* Styles for larger screens */
+@media screen and (min-width: 600px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gameInfo {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .quiz_Container {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+
+    #choices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .choice {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        width: 80%;
+    }
+
+    .wrapper {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .choice {
+        width: 22%;
+    }
+}
