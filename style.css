@@ -15,47 +15,34 @@ h4 {
 }
 
 
-/*Game Login Style */
+/*Game Login Style from AI*/
 .gameLogin {
-    position: absolute;
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    /*background-color: #65DB0A;
-    border: solid 2px yellow;*/
-    margin-top: 15%;
-    margin-left: 30%;
-    margin-right: 20%;
-    margin-bottom: 30%;
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
 }
-
-/*
-fieldset {
-    border: 10px solid #0ABFDB;
-    background-color: yellow;
-    border-radius: 20px;
-}
-
-/*
-.gameLogin label {
-    color: green;
-    font-family: fantasy;
-    font-size: 30px;
-    text-decoration: underline;
-}
-*/
 
 input[type=text] {
     background-color: white;
     color: deeppink;
     border-radius: 20px;
     padding: 15px;
-    font-size: 40px;
-    border: 8px solid #87F1FF;
+    font-size: 20px;
+    border: 2px solid #87F1FF;
     cursor: pointer;
     font-family: fantasy;
     font-weight: bold;
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 input[type=submit] {
@@ -68,12 +55,13 @@ input[type=submit] {
     font-size: 1.5em;
     background-color: #EDF060;
     box-shadow: 0px 4px 4px 4px #30EA1C;
+    width: 100%;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
     background-color: white;
 }
-*/
 
 /* Game Clock Style */
 #gameClock {
@@ -271,7 +259,7 @@ h3 {
 }
 
 
-/* Responsive Styles*/
+/* Responsive Styles
 .column {
   width: 100%;
 }
@@ -281,16 +269,28 @@ h3 {
     width: 50%;
   }
 }
-
+*/
 
 /* Code from AI*/
 
 /* Style for smaller screens */
 @media screen and (max-width: 599px) {
-    .gameLogin {
+    .header, .wrapper {
         width: 100%;
+        margin: 0 auto;
     }
-    .wrapper {
+
+    .choice {
         width: 100%;
+        margin: 10px 0;
+    }
+
+    input[type=text], input[type=submit] {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    input[type=submit] {
+        font-size: 1.2em;
     }
 }
