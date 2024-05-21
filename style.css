@@ -7,9 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column;
 }
-
 
 h4 {
     color: #EDF060;
@@ -18,8 +16,7 @@ h4 {
     bottom: 10px;
 }
 
-
-/*Game Login Style Updates for responsive */
+/* Game Login Style */
 .gameLogin {
     display: flex;
     flex-direction: column;
@@ -70,7 +67,8 @@ input[type=submit]:hover {
     background-color: white;
 }
 
-/* Game Updated game play style */
+/* Game Settings Updated */
+
 .header {
     width: 100%;
     max-width: 1200px;
@@ -80,6 +78,10 @@ input[type=submit]:hover {
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header h3 {
@@ -223,6 +225,15 @@ input[type=submit]:hover {
 
 /* Responsive Styles */
 @media screen and (max-width: 599px) {
+    #score, #reset, #start {
+        position: sticky; /* Reset the position to default */
+        margin-bottom: 10px; /* Adjust margin for spacing */
+        margin-top: auto;
+    }
+
+    .header {
+        position: absolute; /* Reset the position to default */
+    }
     .wrapper {
         flex-direction: column;
     }
