@@ -284,17 +284,6 @@ h3 {
 
 
 /* Code from AI*/
-/* Style for larger screens */
-@media screen and (min-width: 600px) {
-    .gameLogin {
-        width: 50%;
-        margin: auto;
-    }
-    .wrapper {
-        width: 80%;
-        margin: auto;
-    }
-}
 
 /* Style for smaller screens */
 @media screen and (max-width: 599px) {
