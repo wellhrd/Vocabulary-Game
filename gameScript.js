@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
     // Form validation
     function validateForm() {
         const name = document.userInfo.name.value.trim();
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         }
     }
-
+document.addEventListener('DOMContentLoaded', () => {
     // Timer function
     function startTimer(duration, display) {
         let timer = duration;
