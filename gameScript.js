@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Form validation
     function validateForm() {
-        const name = document.userInfo.name.value;
+        const name = document.userInfo.name.value.trim();
         
         if (!name) {
             alert("NAME CAN'T BE LEFT BLANK!");
