@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("NAME CAN'T BE LEFT BLANK!");
             return false;
         } else {
-            alert(`Hello ${name}, Welcome to our Vocabulary Builder Quiz!`);
+            alert ("Hello " + name + ", Welcome to our Vocabulary Builder Quiz!");
             return true;
         }
     }
